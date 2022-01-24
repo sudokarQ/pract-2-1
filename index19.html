@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операторы ветвлений и условий в JavaScript</title>
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            let a = Number(prompt('Введите число a', ''));
+            let b = Number(prompt('Введите число b', ''));
+            let result = (a * b < 0 || isNaN(a) || isNaN(b)) ? 'Невозможно вычислить корень!' :
+                (Math.sqrt(a * b) < 4) ? 'Мало' :
+                    'Много';
+            alert(result);
+        }
+
+        myFunction();
+
+    </script>
+</body>
+
+</html>
